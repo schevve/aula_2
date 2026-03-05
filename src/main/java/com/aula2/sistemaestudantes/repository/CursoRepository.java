@@ -1,4 +1,4 @@
-package com.aula2.sistemaestudantes.respository;
+package com.aula2.sistemaestudantes.repository;
 
 import java.util.Map;
 

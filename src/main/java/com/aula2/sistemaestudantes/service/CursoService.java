@@ -4,7 +4,7 @@ import java.util.Map;
 
 import org.springframework.stereotype.Service;
 
-import com.aula2.sistemaestudantes.respository.CursoRepository;
+import com.aula2.sistemaestudantes.repository.CursoRepository;
 
 @Service
 public class CursoService {
@@ -15,7 +15,7 @@ public class CursoService {
     }
 
     public String[] getAllCursos() {
-        Map<Integer, String> cursosMap =  cursoRepository.getAllCursos();
+        Map<Integer, String> cursosMap = cursoRepository.getAllCursos();
         String[] cursosArray = new String[cursosMap.size()];
         for (Map.Entry<Integer, String> entry : cursosMap.entrySet()) {
             Integer id = entry.getKey();
